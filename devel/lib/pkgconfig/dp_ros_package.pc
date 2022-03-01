@@ -1,0 +1,8 @@
+prefix=/home/dp/DP_ws/devel
+
+Name: dp_ros_package
+Description: Description of dp_ros_package
+Version: 0.1.0
+Cflags: -I/home/dp/DP_ws/src/dp_ros_package/include -I/usr/include/x86_64-linux-gnu/qt5/ -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/lib/x86_64-linux-gnu/qt5//mkspecs/linux-g++ -I/usr/include -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport
+Libs: -L${prefix}/lib -ldp_ros_package /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5 /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.9.5
+Requires: roscpp std_msgs
