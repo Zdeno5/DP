@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dp_ros_package</name>
+  <version>0.1.0</version>
+  <description>ROS package</description>
+
+  <maintainer email="zdenek.pichlik@gmail.com">Zdenek Pichlik</maintainer>
+
+  <license>TODO</license>
+
+  <depend>catkin</depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+
+  <build_depend>rviz</build_depend>
+  <exec_depend>rviz</exec_depend>
+
+  <export>
+
+  </export>
+</package>
