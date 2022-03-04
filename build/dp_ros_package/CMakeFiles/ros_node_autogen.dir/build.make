@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/dp/DP_ws/build
 # Include the progress variables for this target.
 include dp_ros_package/CMakeFiles/ros_node_autogen.dir/progress.make
 
-dp_ros_package/CMakeFiles/ros_node_autogen:
+dp_ros_package/CMakeFiles/ros_node_autogen: /home/dp/DP_ws/src/dp_ros_package/resources/images/carbp.png
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dp/DP_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and RCC for target ros_node"
 	cd /home/dp/DP_ws/build/dp_ros_package && /usr/bin/cmake -E cmake_autogen /home/dp/DP_ws/build/dp_ros_package/CMakeFiles/ros_node_autogen.dir Debug
 

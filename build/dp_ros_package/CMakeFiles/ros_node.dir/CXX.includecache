@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/dp/DP_ws/build/dp_ros_package/ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp
+
 /home/dp/DP_ws/build/dp_ros_package/ros_node_autogen/OWRCGKAYDU/moc_main_window.cpp
 ../../../../src/dp_ros_package/include/dp_ros_package/main_window.h
 /home/dp/DP_ws/src/dp_ros_package/include/dp_ros_package/main_window.h
@@ -19,9 +21,13 @@ OWRCGKAYDU/moc_main_window.cpp
 /home/dp/DP_ws/build/dp_ros_package/ros_node_autogen/OWRCGKAYDU/moc_main_window.cpp
 
 /home/dp/DP_ws/src/dp_ros_package/include/dp_ros_package/main_window.h
+QPixmap
+-
 QWidget
 -
 qtimer.h
+-
+limits.h
 -
 ros/ros.h
 -

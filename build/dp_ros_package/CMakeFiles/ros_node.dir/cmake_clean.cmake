@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o"
   "CMakeFiles/ros_node.dir/src/main_window.cpp.o"
   "CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/ros_node.dir/ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.o"
   "/home/dp/DP_ws/devel/lib/dp_ros_package/ros_node.pdb"
   "/home/dp/DP_ws/devel/lib/dp_ros_package/ros_node"
 )

@@ -1274,6 +1274,33 @@ nodes/ros_node.cpp.s:
 	cd /home/dp/DP_ws/build && $(MAKE) -f dp_ros_package/CMakeFiles/ros_node.dir/build.make dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.s
 .PHONY : nodes/ros_node.cpp.s
 
+ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.o: ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.o
+
+.PHONY : ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.o
+
+# target to build an object file
+ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.o:
+	cd /home/dp/DP_ws/build && $(MAKE) -f dp_ros_package/CMakeFiles/ros_node.dir/build.make dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.o
+.PHONY : ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.o
+
+ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.i: ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.i
+
+.PHONY : ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.i
+
+# target to preprocess a source file
+ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.i:
+	cd /home/dp/DP_ws/build && $(MAKE) -f dp_ros_package/CMakeFiles/ros_node.dir/build.make dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.i
+.PHONY : ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.i
+
+ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.s: ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.s
+
+.PHONY : ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.s
+
+# target to generate assembly for a file
+ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.s:
+	cd /home/dp/DP_ws/build && $(MAKE) -f dp_ros_package/CMakeFiles/ros_node.dir/build.make dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.s
+.PHONY : ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp.s
+
 ros_node_autogen/mocs_compilation.o: ros_node_autogen/mocs_compilation.cpp.o
 
 .PHONY : ros_node_autogen/mocs_compilation.o
@@ -1416,6 +1443,9 @@ help:
 	@echo "... nodes/ros_node.o"
 	@echo "... nodes/ros_node.i"
 	@echo "... nodes/ros_node.s"
+	@echo "... ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.o"
+	@echo "... ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.i"
+	@echo "... ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.s"
 	@echo "... ros_node_autogen/mocs_compilation.o"
 	@echo "... ros_node_autogen/mocs_compilation.i"
 	@echo "... ros_node_autogen/mocs_compilation.s"

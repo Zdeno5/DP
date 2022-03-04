@@ -18,6 +18,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/dp/DP_ws/src/CMakeLists.txt"
   "/home/dp/DP_ws/src/dp_ros_package/CMakeLists.txt"
   "/home/dp/DP_ws/src/dp_ros_package/package.xml"
+  "/home/dp/DP_ws/src/dp_ros_package/resources/resourcemanager.qrc"
   "/opt/ros/melodic/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/melodic/share/actionlib/cmake/actionlibConfig-version.cmake"
   "/opt/ros/melodic/share/actionlib/cmake/actionlibConfig.cmake"
