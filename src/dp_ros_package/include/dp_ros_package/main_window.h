@@ -2,6 +2,7 @@
 #define MAIN_WINDOW_H
 
 #include <QPixmap>
+#include <QPalette>
 #include <QWidget>
 #include <qtimer.h>
 #include <limits.h>

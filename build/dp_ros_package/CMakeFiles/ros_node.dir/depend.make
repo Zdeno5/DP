@@ -192,6 +192,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QList
+dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
@@ -425,6 +426,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: 
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QList
+dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
@@ -655,6 +657,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_6
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QList
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
@@ -694,6 +697,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_6
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel

@@ -34,6 +34,6 @@ set(AM_UIC_SEARCH_PATHS )
 set(AM_RCC_SOURCES "/home/dp/DP_ws/src/dp_ros_package/resources/resourcemanager.qrc")
 set(AM_RCC_BUILDS "/home/dp/DP_ws/build/dp_ros_package/ros_node_autogen/3YJK5W5UP7/qrc_resourcemanager.cpp")
 set(AM_RCC_OPTIONS "{-name;resourcemanager}")
-set(AM_RCC_INPUTS "{/home/dp/DP_ws/src/dp_ros_package/resources/images/carbp.png}")
+set(AM_RCC_INPUTS "{/home/dp/DP_ws/src/dp_ros_package/resources/images/icon.png;/home/dp/DP_ws/src/dp_ros_package/resources/images/carbp.png}")
 # Configurations options
 set(AM_CONFIG_SUFFIX_Debug "_Debug")

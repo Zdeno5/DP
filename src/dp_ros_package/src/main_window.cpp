@@ -7,10 +7,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
   ui->setupUi(this);
 
-  setWindowIcon(QIcon(":/images/carbp.png"));
-
-  QPixmap car(":/images/carbp.png");
-  ui->car_img->setPixmap(car);
+  QPixmap car(":/resources/images/carbp.png");
+  QPalette carbg;
+  //carbg.setBrush(QPalette::Background, carbg);
+  ui->leftBotWidget->setPalette(carbg);
 
   // create node handler
   NodeHadler.reset(new ros::NodeHandle("~"));

@@ -90,7 +90,7 @@ file(GLOB SRCS
 file(GLOB NODES
   "nodes/*.cpp"
 )
-file(GLOB RESOURCES
+file(GLOB QRC
   "resources/*.qrc"
 )
 
@@ -129,7 +129,7 @@ foreach(NODE_FILE ${NODES})
   get_filename_component(NODE_NAME ${NODE_FILE} NAME_WE)
   message("  - " ${NODE_NAME})
 
-  add_executable(${NODE_NAME} ${NODE_FILE} ${HDRS} ${SRCS} ${UI} ${RESOURCES})
+  add_executable(${NODE_NAME} ${NODE_FILE} ${HDRS} ${SRCS} ${UI} ${QRC})
   add_dependencies(${NODE_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
   target_link_libraries (${NODE_NAME} ${catkin_LIBRARIES}  ${EXTERNAL_DEPENDS_LIB})
   target_include_directories(${NODE_NAME} PRIVATE "include/${PROJECT_NAME}/")

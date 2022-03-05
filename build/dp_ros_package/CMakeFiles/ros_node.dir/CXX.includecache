@@ -23,6 +23,8 @@ OWRCGKAYDU/moc_main_window.cpp
 /home/dp/DP_ws/src/dp_ros_package/include/dp_ros_package/main_window.h
 QPixmap
 -
+QPalette
+-
 QWidget
 -
 qtimer.h
@@ -59,6 +61,8 @@ QApplication
 -
 main_window.h
 /home/dp/DP_ws/src/dp_ros_package/nodes/main_window.h
+QIcon
+-
 
 /home/dp/DP_ws/src/dp_ros_package/src/main_window.cpp
 main_window.h
@@ -2166,6 +2170,10 @@ qicon.h
 qevent.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
+qpalette.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
 qpixmap.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
@@ -2574,6 +2582,10 @@ qbuttongroup.h
 qframe.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
+qgridlayout.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
 qboxlayout.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
@@ -2922,6 +2934,8 @@ QtWidgets/QAction
 QtWidgets/QApplication
 -
 QtWidgets/QButtonGroup
+-
+QtWidgets/QGridLayout
 -
 QtWidgets/QHBoxLayout
 -
