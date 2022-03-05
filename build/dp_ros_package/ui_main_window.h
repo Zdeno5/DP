@@ -56,13 +56,17 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QGridLayout *gridLayout;
     QLabel *label_13;
+    QLabel *label_14;
     QLabel *wheel1_label;
     QLabel *label_12;
     QLabel *wheel4_label;
     QLabel *wheel3_label;
     QLabel *label_11;
     QLabel *wheel2_label;
-    QLabel *label_14;
+    QLabel *label_16;
+    QLabel *label_17;
+    QLabel *label_18;
+    QLabel *label_19;
     QWidget *middlewidget;
     QVBoxLayout *verticalLayout_6;
     QWidget *angular_linear_speed_widget;
@@ -100,6 +104,14 @@ public:
     QLabel *l_z;
     QSpacerItem *horizontalSpacer_16;
     QSpacerItem *horizontalSpacer_2;
+    QWidget *verticalWidget;
+    QVBoxLayout *verticalLayout_10;
+    QWidget *cameraWidget;
+    QVBoxLayout *verticalLayout_11;
+    QVBoxLayout *camera_layout;
+    QWidget *controllerWidget;
+    QVBoxLayout *verticalLayout_12;
+    QSpacerItem *horizontalSpacer_17;
     QWidget *verticalWidget_2;
     QVBoxLayout *verticalLayout_2;
     QWidget *rviz_widget;
@@ -111,8 +123,8 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1280, 720);
-        MainWindow->setMinimumSize(QSize(1280, 720));
+        MainWindow->resize(1480, 720);
+        MainWindow->setMinimumSize(QSize(1480, 720));
         MainWindow->setStyleSheet(QLatin1String("#MainWindow{background-color: qlineargradient(spread:pad, x1:0.145, y1:0.169727, x2:1, y2:1, stop:0 rgba(0, 28, 69, 255), stop:0.238806 rgba(28, 68, 121, 255), stop:0.567164 rgba(52, 101, 164, 255), stop:0.885572 rgba(182, 210, 153, 255), stop:1 rgba(252, 237, 110, 255));}\n"
 "\n"
 "\n"
@@ -294,6 +306,13 @@ public:
 
         gridLayout->addWidget(label_13, 5, 1, 1, 1);
 
+        label_14 = new QLabel(carBPwidget);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        sizePolicy4.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
+        label_14->setSizePolicy(sizePolicy4);
+
+        gridLayout->addWidget(label_14, 1, 1, 1, 1);
+
         wheel1_label = new QLabel(carBPwidget);
         wheel1_label->setObjectName(QStringLiteral("wheel1_label"));
         QSizePolicy sizePolicy6(QSizePolicy::Minimum, QSizePolicy::Maximum);
@@ -309,7 +328,7 @@ public:
         font3.setWeight(75);
         wheel1_label->setFont(font3);
         wheel1_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        wheel1_label->setAlignment(Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing);
+        wheel1_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
         gridLayout->addWidget(wheel1_label, 2, 0, 1, 1);
 
@@ -327,6 +346,7 @@ public:
         wheel4_label->setMaximumSize(QSize(40, 40));
         wheel4_label->setFont(font3);
         wheel4_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        wheel4_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
         gridLayout->addWidget(wheel4_label, 4, 2, 1, 1);
 
@@ -338,7 +358,7 @@ public:
         wheel3_label->setMaximumSize(QSize(40, 40));
         wheel3_label->setFont(font3);
         wheel3_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        wheel3_label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        wheel3_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
         gridLayout->addWidget(wheel3_label, 4, 0, 1, 1);
 
@@ -360,16 +380,44 @@ public:
         wheel2_label->setMaximumSize(QSize(40, 50));
         wheel2_label->setFont(font3);
         wheel2_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        wheel2_label->setAlignment(Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft);
+        wheel2_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
         gridLayout->addWidget(wheel2_label, 2, 2, 1, 1);
 
-        label_14 = new QLabel(carBPwidget);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        sizePolicy4.setHeightForWidth(label_14->sizePolicy().hasHeightForWidth());
-        label_14->setSizePolicy(sizePolicy4);
+        label_16 = new QLabel(carBPwidget);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        QFont font4;
+        font4.setBold(true);
+        font4.setWeight(75);
+        label_16->setFont(font4);
+        label_16->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        label_16->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
 
-        gridLayout->addWidget(label_14, 1, 1, 1, 1);
+        gridLayout->addWidget(label_16, 3, 0, 1, 1);
+
+        label_17 = new QLabel(carBPwidget);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setFont(font4);
+        label_17->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        label_17->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
+
+        gridLayout->addWidget(label_17, 3, 2, 1, 1);
+
+        label_18 = new QLabel(carBPwidget);
+        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setFont(font4);
+        label_18->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        label_18->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
+
+        gridLayout->addWidget(label_18, 5, 0, 1, 1);
+
+        label_19 = new QLabel(carBPwidget);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setFont(font4);
+        label_19->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        label_19->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
+
+        gridLayout->addWidget(label_19, 5, 2, 1, 1);
 
 
         horizontalLayout_3->addLayout(gridLayout);
@@ -589,6 +637,40 @@ public:
 
         horizontalLayout->addWidget(middlewidget);
 
+        verticalWidget = new QWidget(MainWindow);
+        verticalWidget->setObjectName(QStringLiteral("verticalWidget"));
+        verticalLayout_10 = new QVBoxLayout(verticalWidget);
+        verticalLayout_10->setObjectName(QStringLiteral("verticalLayout_10"));
+        cameraWidget = new QWidget(verticalWidget);
+        cameraWidget->setObjectName(QStringLiteral("cameraWidget"));
+        cameraWidget->setMaximumSize(QSize(533, 300));
+        cameraWidget->setStyleSheet(QStringLiteral("#cameraWidget{border:1px solid white;}"));
+        verticalLayout_11 = new QVBoxLayout(cameraWidget);
+        verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
+        verticalLayout_11->setContentsMargins(1, 1, 1, 1);
+        camera_layout = new QVBoxLayout();
+        camera_layout->setObjectName(QStringLiteral("camera_layout"));
+
+        verticalLayout_11->addLayout(camera_layout);
+
+
+        verticalLayout_10->addWidget(cameraWidget);
+
+        controllerWidget = new QWidget(verticalWidget);
+        controllerWidget->setObjectName(QStringLiteral("controllerWidget"));
+        controllerWidget->setStyleSheet(QStringLiteral("#controllerWidget{border: 1px solid white;}"));
+        verticalLayout_12 = new QVBoxLayout(controllerWidget);
+        verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
+        horizontalSpacer_17 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        verticalLayout_12->addItem(horizontalSpacer_17);
+
+
+        verticalLayout_10->addWidget(controllerWidget);
+
+
+        horizontalLayout->addWidget(verticalWidget);
+
         verticalWidget_2 = new QWidget(MainWindow);
         verticalWidget_2->setObjectName(QStringLiteral("verticalWidget_2"));
         verticalLayout_2 = new QVBoxLayout(verticalWidget_2);
@@ -630,17 +712,21 @@ public:
         label->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
         pushButton->setText(QApplication::translate("MainWindow", "PushButton", Q_NULLPTR));
-        label_15->setText(QApplication::translate("MainWindow", "Temperature:", Q_NULLPTR));
+        label_15->setText(QApplication::translate("MainWindow", "IMU Temperature:", Q_NULLPTR));
         TemperatureLabel->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
         celsius->setText(QApplication::translate("MainWindow", "\302\260C", Q_NULLPTR));
         label_13->setText(QString());
-        wheel1_label->setText(QApplication::translate("MainWindow", "1000", Q_NULLPTR));
+        label_14->setText(QString());
+        wheel1_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>1000</p></body></html>", Q_NULLPTR));
         label_12->setText(QString());
         wheel4_label->setText(QApplication::translate("MainWindow", "10", Q_NULLPTR));
-        wheel3_label->setText(QApplication::translate("MainWindow", "500", Q_NULLPTR));
+        wheel3_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>500</p></body></html>", Q_NULLPTR));
         label_11->setText(QApplication::translate("MainWindow", "Wheel Speeds", Q_NULLPTR));
-        wheel2_label->setText(QApplication::translate("MainWindow", "100", Q_NULLPTR));
-        label_14->setText(QString());
+        wheel2_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>100</p></body></html>", Q_NULLPTR));
+        label_16->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
+        label_17->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
+        label_18->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
+        label_19->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Required angular speed", Q_NULLPTR));
         label_4->setText(QApplication::translate("MainWindow", "x : ", Q_NULLPTR));
         a_x->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));

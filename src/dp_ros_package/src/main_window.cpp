@@ -68,13 +68,18 @@ MainWindow::MainWindow(QWidget *parent) :
   rviz_manager = new rviz::VisualizationManager(rviz_render);
   rviz_render->initialize( rviz_manager->getSceneManager(), rviz_manager );
   rviz_manager ->initialize();
+  camera_render = new rviz::RenderPanel;
+  camera_manager = new rviz::VisualizationManager(camera_render);
+  camera_render->initialize( camera_manager->getSceneManager(), camera_manager );
+  camera_manager ->initialize();
 
   //add rviz to ui
   ui->rviz_layout->addWidget(rviz_render);
-  rviz_render->setStyleSheet("border: 3px solid white;");
+  ui->camera_layout->addWidget(camera_render);
 
   //clean the manager
   rviz_manager->removeAllDisplays();
+  camera_manager->removeAllDisplays();
 
   //add displays ////////////////////////////////////////////////////////////////////////
   map_display = rviz_manager->createDisplay( "rviz/Map", "adjustable map", true );

@@ -68,6 +68,8 @@ private:
   //rviz
   rviz::VisualizationManager* rviz_manager;
   rviz::RenderPanel* rviz_render;
+  rviz::VisualizationManager* camera_manager;
+  rviz::RenderPanel* camera_render;
 
   rviz::Display* scan_display;
   rviz::Display* local_costmap_display;
@@ -76,6 +78,7 @@ private:
   rviz::Display* map_display;
   rviz::Display* pose_display;
   rviz::Display* goal_display;
+  rviz::Display* camera_display;
 };
 
 #endif // MAIN_WINDOW_H
