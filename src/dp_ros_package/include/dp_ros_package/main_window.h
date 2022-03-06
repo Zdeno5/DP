@@ -46,6 +46,25 @@ public:
 public slots:
   void spinOnce();
 
+private slots:
+  void on_checkBox_stateChanged(int arg1);
+
+  void on_verticalSliderZeroBtn_clicked();
+
+  void on_horizontalZslider_clicked();
+
+  void on_verticalSlider_valueChanged(int value);
+
+  void on_horizontalSlider_valueChanged(int value);
+
+  void on_verticalSliderUpBtn_clicked();
+
+  void on_verticalSliderDownBtn_clicked();
+
+  void on_horizontalLslider_clicked();
+
+  void on_horizontalRslider_clicked();
+
 private:
   Ui::MainWindow *ui;
 

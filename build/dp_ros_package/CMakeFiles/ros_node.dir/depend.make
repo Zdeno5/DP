@@ -696,6 +696,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_6
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
@@ -703,6 +704,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_6
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
@@ -717,6 +719,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_6
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qbuttongroup.h
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h

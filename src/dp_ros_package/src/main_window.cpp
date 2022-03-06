@@ -80,6 +80,8 @@ MainWindow::MainWindow(QWidget *parent) :
   //clean the manager
   rviz_manager->removeAllDisplays();
   camera_manager->removeAllDisplays();
+  //rviz_manager->handleMouseEvent();
+  //rviz_manager->getSelectionManager();
 
   //add displays ////////////////////////////////////////////////////////////////////////
   map_display = rviz_manager->createDisplay( "rviz/Map", "adjustable map", true );
@@ -207,4 +209,79 @@ void MainWindow::planCallback(const nav_msgs::Path msg){
 
 void MainWindow::mapCallback(const nav_msgs::OccupancyGrid msg){
   auto map = msg.data;
+}
+
+void MainWindow::on_checkBox_stateChanged(int state)
+{
+  if(state){
+    ui->verticalSlider->setEnabled(1);
+    ui->horizontalSlider->setEnabled(1);
+    ui->verticalSliderUpBtn->setEnabled(1);
+    ui->verticalSliderZeroBtn->setEnabled(1);
+    ui->verticalSliderDownBtn->setEnabled(1);
+    ui->horizontalLslider->setEnabled(1);
+    ui->horizontalZslider->setEnabled(1);
+    ui->horizontalRslider->setEnabled(1);
+
+  }
+  else{
+    ui->verticalSlider->setEnabled(0);
+    ui->horizontalSlider->setEnabled(0);
+    ui->verticalSlider->setValue(0);
+    ui->horizontalSlider->setValue(0);
+    ui->verticalSliderUpBtn->setEnabled(0);
+    ui->verticalSliderZeroBtn->setEnabled(0);
+    ui->verticalSliderDownBtn->setEnabled(0);
+    ui->horizontalLslider->setEnabled(0);
+    ui->horizontalZslider->setEnabled(0);
+    ui->horizontalRslider->setEnabled(0);
+  }
+}
+
+void MainWindow::on_verticalSliderZeroBtn_clicked()
+{
+    ui->verticalSlider->setValue(0);
+}
+
+void MainWindow::on_horizontalZslider_clicked()
+{
+    ui->horizontalSlider->setValue(0);
+}
+
+void MainWindow::on_verticalSlider_valueChanged(int value)
+{
+    ui->controll_speed->setText(QString::number(value) + " m/s");
+}
+
+void MainWindow::on_horizontalSlider_valueChanged(int value)
+{
+    ui->controll_steer->setText(QString::number(value) + " rad/s");
+}
+
+void MainWindow::on_verticalSliderUpBtn_clicked()
+{
+  int curr = ui->verticalSlider->value();
+  if(curr != ui->verticalSlider->maximum())
+    ui->verticalSlider->setValue(curr+1);
+}
+
+void MainWindow::on_verticalSliderDownBtn_clicked()
+{
+  int curr = ui->verticalSlider->value();
+  if(curr != ui->verticalSlider->minimum())
+    ui->verticalSlider->setValue(curr-1);
+}
+
+void MainWindow::on_horizontalLslider_clicked()
+{
+  int curr = ui->horizontalSlider->value();
+  if(curr != ui->horizontalSlider->minimum())
+    ui->horizontalSlider->setValue(curr-1);
+}
+
+void MainWindow::on_horizontalRslider_clicked()
+{
+  int curr = ui->horizontalSlider->value();
+  if(curr != ui->horizontalSlider->maximum())
+    ui->horizontalSlider->setValue(curr+1);
 }

@@ -13,12 +13,14 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -111,7 +113,42 @@ public:
     QVBoxLayout *camera_layout;
     QWidget *controllerWidget;
     QVBoxLayout *verticalLayout_12;
+    QCheckBox *checkBox;
+    QHBoxLayout *horizontalLayout_4;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_14;
+    QHBoxLayout *horizontalLayout_13;
+    QSpacerItem *horizontalSpacer_19;
+    QPushButton *verticalSliderUpBtn;
+    QSpacerItem *verticalSpacer_4;
+    QHBoxLayout *horizontalLayout_14;
+    QSpacerItem *horizontalSpacer_21;
+    QPushButton *verticalSliderZeroBtn;
+    QSpacerItem *verticalSpacer_5;
+    QHBoxLayout *horizontalLayout_15;
+    QSpacerItem *horizontalSpacer_20;
+    QPushButton *verticalSliderDownBtn;
+    QSlider *verticalSlider;
+    QWidget *widget_2;
+    QHBoxLayout *horizontalLayout_5;
+    QLabel *controll_speed;
+    QSpacerItem *horizontalSpacer_22;
+    QWidget *widget_3;
+    QHBoxLayout *horizontalLayout_12;
+    QVBoxLayout *verticalLayout_15;
+    QSpacerItem *verticalSpacer_3;
+    QPushButton *horizontalLslider;
     QSpacerItem *horizontalSpacer_17;
+    QWidget *widget_4;
+    QVBoxLayout *verticalLayout_13;
+    QSpacerItem *verticalSpacer_7;
+    QLabel *controll_steer;
+    QPushButton *horizontalZslider;
+    QSpacerItem *horizontalSpacer_18;
+    QVBoxLayout *verticalLayout_16;
+    QSpacerItem *verticalSpacer_6;
+    QPushButton *horizontalRslider;
+    QSlider *horizontalSlider;
     QWidget *verticalWidget_2;
     QVBoxLayout *verticalLayout_2;
     QWidget *rviz_widget;
@@ -643,7 +680,7 @@ public:
         verticalLayout_10->setObjectName(QStringLiteral("verticalLayout_10"));
         cameraWidget = new QWidget(verticalWidget);
         cameraWidget->setObjectName(QStringLiteral("cameraWidget"));
-        cameraWidget->setMaximumSize(QSize(533, 300));
+        cameraWidget->setMaximumSize(QSize(1000, 1000));
         cameraWidget->setStyleSheet(QStringLiteral("#cameraWidget{border:1px solid white;}"));
         verticalLayout_11 = new QVBoxLayout(cameraWidget);
         verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
@@ -658,12 +695,226 @@ public:
 
         controllerWidget = new QWidget(verticalWidget);
         controllerWidget->setObjectName(QStringLiteral("controllerWidget"));
-        controllerWidget->setStyleSheet(QStringLiteral("#controllerWidget{border: 1px solid white;}"));
+        controllerWidget->setMaximumSize(QSize(16777215, 400));
+        controllerWidget->setStyleSheet(QLatin1String("#controllerWidget{border: 1px solid white;\n"
+"background-color: rgb(114, 159, 207);}"));
         verticalLayout_12 = new QVBoxLayout(controllerWidget);
         verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
-        horizontalSpacer_17 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        checkBox = new QCheckBox(controllerWidget);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+        QFont font5;
+        font5.setPointSize(12);
+        font5.setBold(true);
+        font5.setWeight(75);
+        checkBox->setFont(font5);
+        checkBox->setIconSize(QSize(25, 25));
 
-        verticalLayout_12->addItem(horizontalSpacer_17);
+        verticalLayout_12->addWidget(checkBox);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        widget = new QWidget(controllerWidget);
+        widget->setObjectName(QStringLiteral("widget"));
+        verticalLayout_14 = new QVBoxLayout(widget);
+        verticalLayout_14->setObjectName(QStringLiteral("verticalLayout_14"));
+        horizontalLayout_13 = new QHBoxLayout();
+        horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
+        horizontalSpacer_19 = new QSpacerItem(100, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_13->addItem(horizontalSpacer_19);
+
+        verticalSliderUpBtn = new QPushButton(widget);
+        verticalSliderUpBtn->setObjectName(QStringLiteral("verticalSliderUpBtn"));
+        verticalSliderUpBtn->setEnabled(false);
+        verticalSliderUpBtn->setMaximumSize(QSize(30, 16777215));
+
+        horizontalLayout_13->addWidget(verticalSliderUpBtn);
+
+
+        verticalLayout_14->addLayout(horizontalLayout_13);
+
+        verticalSpacer_4 = new QSpacerItem(20, 70, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_14->addItem(verticalSpacer_4);
+
+        horizontalLayout_14 = new QHBoxLayout();
+        horizontalLayout_14->setObjectName(QStringLiteral("horizontalLayout_14"));
+        horizontalSpacer_21 = new QSpacerItem(100, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_14->addItem(horizontalSpacer_21);
+
+        verticalSliderZeroBtn = new QPushButton(widget);
+        verticalSliderZeroBtn->setObjectName(QStringLiteral("verticalSliderZeroBtn"));
+        verticalSliderZeroBtn->setEnabled(false);
+        verticalSliderZeroBtn->setMaximumSize(QSize(30, 16777215));
+
+        horizontalLayout_14->addWidget(verticalSliderZeroBtn);
+
+
+        verticalLayout_14->addLayout(horizontalLayout_14);
+
+        verticalSpacer_5 = new QSpacerItem(20, 70, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_14->addItem(verticalSpacer_5);
+
+        horizontalLayout_15 = new QHBoxLayout();
+        horizontalLayout_15->setObjectName(QStringLiteral("horizontalLayout_15"));
+        horizontalSpacer_20 = new QSpacerItem(100, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_15->addItem(horizontalSpacer_20);
+
+        verticalSliderDownBtn = new QPushButton(widget);
+        verticalSliderDownBtn->setObjectName(QStringLiteral("verticalSliderDownBtn"));
+        verticalSliderDownBtn->setEnabled(false);
+        verticalSliderDownBtn->setMaximumSize(QSize(30, 16777215));
+        QFont font6;
+        font6.setPointSize(9);
+        verticalSliderDownBtn->setFont(font6);
+
+        horizontalLayout_15->addWidget(verticalSliderDownBtn);
+
+
+        verticalLayout_14->addLayout(horizontalLayout_15);
+
+
+        horizontalLayout_4->addWidget(widget);
+
+        verticalSlider = new QSlider(controllerWidget);
+        verticalSlider->setObjectName(QStringLiteral("verticalSlider"));
+        verticalSlider->setEnabled(false);
+        QSizePolicy sizePolicy7(QSizePolicy::Fixed, QSizePolicy::Ignored);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(0);
+        sizePolicy7.setHeightForWidth(verticalSlider->sizePolicy().hasHeightForWidth());
+        verticalSlider->setSizePolicy(sizePolicy7);
+        QFont font7;
+        font7.setKerning(false);
+        font7.setStyleStrategy(QFont::NoAntialias);
+        verticalSlider->setFont(font7);
+        verticalSlider->setFocusPolicy(Qt::NoFocus);
+        verticalSlider->setLayoutDirection(Qt::LeftToRight);
+        verticalSlider->setAutoFillBackground(false);
+        verticalSlider->setStyleSheet(QStringLiteral(""));
+        verticalSlider->setMinimum(-10);
+        verticalSlider->setMaximum(10);
+        verticalSlider->setPageStep(1);
+        verticalSlider->setOrientation(Qt::Vertical);
+        verticalSlider->setInvertedControls(false);
+        verticalSlider->setTickPosition(QSlider::TicksBothSides);
+        verticalSlider->setTickInterval(1);
+
+        horizontalLayout_4->addWidget(verticalSlider);
+
+        widget_2 = new QWidget(controllerWidget);
+        widget_2->setObjectName(QStringLiteral("widget_2"));
+        horizontalLayout_5 = new QHBoxLayout(widget_2);
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        controll_speed = new QLabel(widget_2);
+        controll_speed->setObjectName(QStringLiteral("controll_speed"));
+        controll_speed->setFont(font5);
+
+        horizontalLayout_5->addWidget(controll_speed);
+
+        horizontalSpacer_22 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_22);
+
+
+        horizontalLayout_4->addWidget(widget_2);
+
+
+        verticalLayout_12->addLayout(horizontalLayout_4);
+
+        widget_3 = new QWidget(controllerWidget);
+        widget_3->setObjectName(QStringLiteral("widget_3"));
+        widget_3->setMaximumSize(QSize(16777215, 80));
+        horizontalLayout_12 = new QHBoxLayout(widget_3);
+        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
+        verticalLayout_15 = new QVBoxLayout();
+        verticalLayout_15->setObjectName(QStringLiteral("verticalLayout_15"));
+        verticalSpacer_3 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_15->addItem(verticalSpacer_3);
+
+        horizontalLslider = new QPushButton(widget_3);
+        horizontalLslider->setObjectName(QStringLiteral("horizontalLslider"));
+        horizontalLslider->setEnabled(false);
+        horizontalLslider->setMaximumSize(QSize(30, 16777215));
+
+        verticalLayout_15->addWidget(horizontalLslider);
+
+
+        horizontalLayout_12->addLayout(verticalLayout_15);
+
+        horizontalSpacer_17 = new QSpacerItem(40, 10, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_12->addItem(horizontalSpacer_17);
+
+        widget_4 = new QWidget(widget_3);
+        widget_4->setObjectName(QStringLiteral("widget_4"));
+        verticalLayout_13 = new QVBoxLayout(widget_4);
+        verticalLayout_13->setObjectName(QStringLiteral("verticalLayout_13"));
+        verticalLayout_13->setContentsMargins(0, 0, 0, 0);
+        verticalSpacer_7 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_13->addItem(verticalSpacer_7);
+
+        controll_steer = new QLabel(widget_4);
+        controll_steer->setObjectName(QStringLiteral("controll_steer"));
+        controll_steer->setFont(font5);
+        controll_steer->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_13->addWidget(controll_steer);
+
+        horizontalZslider = new QPushButton(widget_4);
+        horizontalZslider->setObjectName(QStringLiteral("horizontalZslider"));
+        horizontalZslider->setEnabled(false);
+
+        verticalLayout_13->addWidget(horizontalZslider);
+
+
+        horizontalLayout_12->addWidget(widget_4);
+
+        horizontalSpacer_18 = new QSpacerItem(40, 10, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_12->addItem(horizontalSpacer_18);
+
+        verticalLayout_16 = new QVBoxLayout();
+        verticalLayout_16->setObjectName(QStringLiteral("verticalLayout_16"));
+        verticalSpacer_6 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_16->addItem(verticalSpacer_6);
+
+        horizontalRslider = new QPushButton(widget_3);
+        horizontalRslider->setObjectName(QStringLiteral("horizontalRslider"));
+        horizontalRslider->setEnabled(false);
+        horizontalRslider->setMaximumSize(QSize(30, 16777215));
+
+        verticalLayout_16->addWidget(horizontalRslider);
+
+
+        horizontalLayout_12->addLayout(verticalLayout_16);
+
+
+        verticalLayout_12->addWidget(widget_3);
+
+        horizontalSlider = new QSlider(controllerWidget);
+        horizontalSlider->setObjectName(QStringLiteral("horizontalSlider"));
+        horizontalSlider->setEnabled(false);
+        horizontalSlider->setFont(font7);
+        horizontalSlider->setFocusPolicy(Qt::NoFocus);
+        horizontalSlider->setAutoFillBackground(false);
+        horizontalSlider->setMinimum(-30);
+        horizontalSlider->setMaximum(30);
+        horizontalSlider->setPageStep(1);
+        horizontalSlider->setValue(0);
+        horizontalSlider->setSliderPosition(0);
+        horizontalSlider->setOrientation(Qt::Horizontal);
+        horizontalSlider->setInvertedControls(false);
+        horizontalSlider->setTickPosition(QSlider::TicksBothSides);
+        horizontalSlider->setTickInterval(1);
+
+        verticalLayout_12->addWidget(horizontalSlider);
 
 
         verticalLayout_10->addWidget(controllerWidget);
@@ -741,6 +992,15 @@ public:
         l_y->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "z : ", Q_NULLPTR));
         l_z->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
+        checkBox->setText(QApplication::translate("MainWindow", "Manual controll", Q_NULLPTR));
+        verticalSliderUpBtn->setText(QApplication::translate("MainWindow", "^", Q_NULLPTR));
+        verticalSliderZeroBtn->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
+        verticalSliderDownBtn->setText(QApplication::translate("MainWindow", "v", Q_NULLPTR));
+        controll_speed->setText(QApplication::translate("MainWindow", "0 m/s", Q_NULLPTR));
+        horizontalLslider->setText(QApplication::translate("MainWindow", "<", Q_NULLPTR));
+        controll_steer->setText(QApplication::translate("MainWindow", "0 rad/s", Q_NULLPTR));
+        horizontalZslider->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
+        horizontalRslider->setText(QApplication::translate("MainWindow", ">", Q_NULLPTR));
     } // retranslateUi
 
 };
