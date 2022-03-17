@@ -41,6 +41,10 @@ rviz/display.h
 -
 rviz/tool_manager.h
 -
+rviz/interactive_object.h
+-
+rviz/viewport_mouse_event.h
+-
 std_msgs/String.h
 -
 std_msgs/Float64.h
@@ -1146,6 +1150,14 @@ QStringList
 QIcon
 -
 
+/opt/ros/melodic/include/rviz/interactive_object.h
+boost/shared_ptr.hpp
+-
+boost/weak_ptr.hpp
+-
+QCursor
+-
+
 /opt/ros/melodic/include/rviz/load_resource.h
 QPixmap
 -
@@ -1255,6 +1267,12 @@ rviz/tool.h
 /opt/ros/melodic/include/rviz/rviz/tool.h
 rviz/rviz_export.h
 /opt/ros/melodic/include/rviz/rviz/rviz_export.h
+
+/opt/ros/melodic/include/rviz/viewport_mouse_event.h
+QMouseEvent
+-
+QWheelEvent
+-
 
 /opt/ros/melodic/include/rviz/visualization_manager.h
 deque
@@ -2170,6 +2188,10 @@ qicon.h
 qevent.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
+qevent.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 qpalette.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
@@ -2177,6 +2199,10 @@ qpalette.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
 qpixmap.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QWheelEvent
+qevent.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 QtGui/qtguiglobal.h

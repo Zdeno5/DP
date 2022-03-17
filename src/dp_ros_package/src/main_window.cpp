@@ -7,11 +7,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
   ui->setupUi(this);
 
-  QPixmap car(":/resources/images/carbp.png");
-  QPalette carbg;
-  //carbg.setBrush(QPalette::Background, carbg);
-  ui->leftBotWidget->setPalette(carbg);
-
   // create node handler
   NodeHadler.reset(new ros::NodeHandle("~"));
 
@@ -20,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
   connect(ros_timer, SIGNAL(timeout()), this, SLOT(spinOnce()));
   ros_timer->start(100);
 
+  //--------------------------------------- Subscribers ----------------------------------------------------------//
   //temperature subsriber - Float64
   std::string temp_listen;
   NodeHadler->param<std::string>("temp_listen",temp_listen,"/imu/temperature");
@@ -62,6 +58,11 @@ MainWindow::MainWindow(QWidget *parent) :
   NodeHadler->param<std::string>("map_listen",map_listen,"/map");
   map_sub = NodeHadler->subscribe<nav_msgs::OccupancyGrid>(map_listen ,1 ,&MainWindow::mapCallback ,this );
 
+  //---------------------------------------Publishers--------------------------------------------------------//
+  std::string controll_publish;
+  NodeHadler->param<std::string>("controll_publish",controll_publish,"/test/controll");
+  controll_pub = NodeHadler->advertise<geometry_msgs::Twist>(controll_publish,1);
+
   //rviz ------------------------------------------------------------------------------------------------------
   //inititalize rviz
   rviz_render = new rviz::RenderPanel;
@@ -102,10 +103,10 @@ MainWindow::MainWindow(QWidget *parent) :
   plan_display = rviz_manager->createDisplay( "rviz/Path", "adjustable path", true );
   plan_display->subProp( "Topic" )->setValue( "/move_base/NavfnROS/plan" );
 
-  pose_display = rviz_manager->createDisplay( "rviz/PoseWithCovariance", "adjustable posewithcovariance", true );
+  pose_display = rviz_manager->createDisplay( "rviz/PoseWithCovariance", "adjustable pose", true );
   pose_display->subProp( "Topic" )->setValue( "/amcl_pose" );
 
-  goal_display = rviz_manager->createDisplay( "rviz/Pose", "adjustable pose", true );
+  goal_display = rviz_manager->createDisplay( "rviz/Pose", "adjustable goal", true );
   goal_display->subProp( "Topic" )->setValue( "/move_base/current_goal" );
 
   //start rviz
@@ -117,7 +118,19 @@ MainWindow::~MainWindow()
   delete ui;
 }
 
+// ROS spin + publish
 void MainWindow::spinOnce(){
+  if(ui->checkBox->checkState()){
+    geometry_msgs::Twist twist;
+    twist.linear.x = ui->verticalSlider->value();
+    twist.linear.y = 0;
+    twist.linear.z = 0;
+    twist.angular.x = 0;
+    twist.angular.y = 0;
+    twist.angular.z = ui->horizontalSlider->value();
+    controll_pub.publish(twist);
+  }
+
   if(ros::ok()){
     ros::spinOnce();
   }
@@ -222,7 +235,6 @@ void MainWindow::on_checkBox_stateChanged(int state)
     ui->horizontalLslider->setEnabled(1);
     ui->horizontalZslider->setEnabled(1);
     ui->horizontalRslider->setEnabled(1);
-
   }
   else{
     ui->verticalSlider->setEnabled(0);
@@ -284,4 +296,25 @@ void MainWindow::on_horizontalRslider_clicked()
   int curr = ui->horizontalSlider->value();
   if(curr != ui->horizontalSlider->maximum())
     ui->horizontalSlider->setValue(curr+1);
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+  QString master_uri;
+  QString host;
+
+  master_uri = ui->hostname_txt->text();
+  host = ui->masteruri_txt->text();
+
+  if(master_uri.isEmpty()){
+    master_uri="http://localhost:11311";
+  }
+  if(host.isEmpty()){
+    host="localhost";
+  }
+
+  std::map<std::string,std::string> remappings;
+  remappings["__master"] = master_uri.toStdString();
+  remappings["__hostname"] = host.toStdString();
+  ros::init(remappings,"ros_node",ros::init_options::AnonymousName);
 }

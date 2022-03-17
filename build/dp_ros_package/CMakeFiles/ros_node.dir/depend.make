@@ -88,6 +88,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/in
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/display.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/display_context.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/factory.h
+dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/interactive_object.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/load_resource.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/ogre_helpers/qt_ogre_render_window.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/ogre_helpers/render_widget.h
@@ -99,6 +100,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/in
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/rviz_export.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/tool.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/tool_manager.h
+dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/viewport_mouse_event.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/rviz/visualization_manager.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/sensor_msgs/LaserScan.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /opt/ros/melodic/include/std_msgs/Float32MultiArray.h
@@ -192,8 +194,10 @@ dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QList
+dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
+dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QWheelEvent
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 dp_ros_package/CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
@@ -324,6 +328,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: 
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/display.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/display_context.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/factory.h
+dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/interactive_object.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/load_resource.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/ogre_helpers/qt_ogre_render_window.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/ogre_helpers/render_widget.h
@@ -335,6 +340,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: 
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/rviz_export.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/tool.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/tool_manager.h
+dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/viewport_mouse_event.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/rviz/visualization_manager.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/sensor_msgs/LaserScan.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /opt/ros/melodic/include/std_msgs/Float32MultiArray.h
@@ -426,8 +432,10 @@ dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: 
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QList
+dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
+dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QWheelEvent
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 dp_ros_package/CMakeFiles/ros_node.dir/ros_node_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
@@ -550,6 +558,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/i
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/display.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/display_context.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/factory.h
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/interactive_object.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/load_resource.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/ogre_helpers/qt_ogre_render_window.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/ogre_helpers/render_widget.h
@@ -561,6 +570,7 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/i
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/rviz_export.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/tool.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/tool_manager.h
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/viewport_mouse_event.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/rviz/visualization_manager.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/sensor_msgs/LaserScan.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /opt/ros/melodic/include/std_msgs/Float32MultiArray.h
@@ -657,8 +667,10 @@ dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_6
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QList
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
+dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QWheelEvent
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 dp_ros_package/CMakeFiles/ros_node.dir/src/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h

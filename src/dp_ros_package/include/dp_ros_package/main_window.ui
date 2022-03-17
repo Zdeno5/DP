@@ -60,16 +60,27 @@
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">color: rgb(255, 255, 255);</string>
              </property>
              <property name="text">
-              <string>TextLabel</string>
+              <string>ROS Hostname or IP :</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit"/>
+            <widget class="QLineEdit" name="hostname_txt">
+             <property name="placeholderText">
+              <string>localhost</string>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QLabel" name="label_2">
@@ -79,21 +90,49 @@
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">color: rgb(255, 255, 255);</string>
              </property>
              <property name="text">
-              <string>TextLabel</string>
+              <string>ROS Master URI :</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_2"/>
+            <widget class="QLineEdit" name="masteruri_txt">
+             <property name="placeholderText">
+              <string>http://localhost:11311</string>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QPushButton" name="pushButton">
              <property name="text">
-              <string>PushButton</string>
+              <string>Connect</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Connected to : </string>
              </property>
             </widget>
            </item>
@@ -1282,7 +1321,7 @@ background-color: rgb(114, 159, 207);}</string>
                      </size>
                     </property>
                     <property name="text">
-                     <string>^</string>
+                     <string>+</string>
                     </property>
                    </widget>
                   </item>
@@ -1391,7 +1430,7 @@ background-color: rgb(114, 159, 207);}</string>
                      </font>
                     </property>
                     <property name="text">
-                     <string>v</string>
+                     <string>-</string>
                     </property>
                    </widget>
                   </item>

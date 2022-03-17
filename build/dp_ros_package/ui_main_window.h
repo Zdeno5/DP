@@ -37,10 +37,11 @@ public:
     QWidget *connectwidget;
     QVBoxLayout *verticalLayout_4;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *hostname_txt;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
+    QLineEdit *masteruri_txt;
     QPushButton *pushButton;
+    QLabel *label_20;
     QWidget *temperatureWidget;
     QVBoxLayout *verticalLayout_8;
     QSpacerItem *verticalSpacer_2;
@@ -197,32 +198,45 @@ public:
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
         label->setSizePolicy(sizePolicy2);
+        QFont font;
+        font.setPointSize(13);
+        font.setBold(true);
+        font.setWeight(75);
+        label->setFont(font);
         label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         verticalLayout_4->addWidget(label);
 
-        lineEdit = new QLineEdit(connectwidget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        hostname_txt = new QLineEdit(connectwidget);
+        hostname_txt->setObjectName(QStringLiteral("hostname_txt"));
 
-        verticalLayout_4->addWidget(lineEdit);
+        verticalLayout_4->addWidget(hostname_txt);
 
         label_2 = new QLabel(connectwidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         sizePolicy2.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
         label_2->setSizePolicy(sizePolicy2);
+        label_2->setFont(font);
         label_2->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         verticalLayout_4->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(connectwidget);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        masteruri_txt = new QLineEdit(connectwidget);
+        masteruri_txt->setObjectName(QStringLiteral("masteruri_txt"));
 
-        verticalLayout_4->addWidget(lineEdit_2);
+        verticalLayout_4->addWidget(masteruri_txt);
 
         pushButton = new QPushButton(connectwidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         verticalLayout_4->addWidget(pushButton);
+
+        label_20 = new QLabel(connectwidget);
+        label_20->setObjectName(QStringLiteral("label_20"));
+        label_20->setFont(font);
+        label_20->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+
+        verticalLayout_4->addWidget(label_20);
 
 
         verticalLayout->addWidget(connectwidget);
@@ -244,11 +258,11 @@ public:
         label_15->setSizePolicy(sizePolicy1);
         label_15->setMinimumSize(QSize(160, 30));
         label_15->setMaximumSize(QSize(1000, 30));
-        QFont font;
-        font.setPointSize(14);
-        font.setBold(true);
-        font.setWeight(75);
-        label_15->setFont(font);
+        QFont font1;
+        font1.setPointSize(14);
+        font1.setBold(true);
+        font1.setWeight(75);
+        label_15->setFont(font1);
         label_15->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_15->setScaledContents(false);
         label_15->setAlignment(Qt::AlignCenter);
@@ -275,11 +289,11 @@ public:
         sizePolicy3.setHeightForWidth(TemperatureLabel->sizePolicy().hasHeightForWidth());
         TemperatureLabel->setSizePolicy(sizePolicy3);
         TemperatureLabel->setMaximumSize(QSize(16777215, 40));
-        QFont font1;
-        font1.setPointSize(18);
-        font1.setBold(true);
-        font1.setWeight(75);
-        TemperatureLabel->setFont(font1);
+        QFont font2;
+        font2.setPointSize(18);
+        font2.setBold(true);
+        font2.setWeight(75);
+        TemperatureLabel->setFont(font2);
         TemperatureLabel->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         TemperatureLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -290,9 +304,9 @@ public:
         sizePolicy3.setHeightForWidth(celsius->sizePolicy().hasHeightForWidth());
         celsius->setSizePolicy(sizePolicy3);
         celsius->setMaximumSize(QSize(16777215, 40));
-        QFont font2;
-        font2.setPointSize(16);
-        celsius->setFont(font2);
+        QFont font3;
+        font3.setPointSize(16);
+        celsius->setFont(font3);
         celsius->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_2->addWidget(celsius);
@@ -359,11 +373,7 @@ public:
         wheel1_label->setSizePolicy(sizePolicy6);
         wheel1_label->setMinimumSize(QSize(40, 0));
         wheel1_label->setMaximumSize(QSize(40, 50));
-        QFont font3;
-        font3.setPointSize(13);
-        font3.setBold(true);
-        font3.setWeight(75);
-        wheel1_label->setFont(font3);
+        wheel1_label->setFont(font);
         wheel1_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         wheel1_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
@@ -381,7 +391,7 @@ public:
         wheel4_label->setSizePolicy(sizePolicy6);
         wheel4_label->setMinimumSize(QSize(40, 0));
         wheel4_label->setMaximumSize(QSize(40, 40));
-        wheel4_label->setFont(font3);
+        wheel4_label->setFont(font);
         wheel4_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         wheel4_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
@@ -393,7 +403,7 @@ public:
         wheel3_label->setSizePolicy(sizePolicy6);
         wheel3_label->setMinimumSize(QSize(40, 0));
         wheel3_label->setMaximumSize(QSize(40, 40));
-        wheel3_label->setFont(font3);
+        wheel3_label->setFont(font);
         wheel3_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         wheel3_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
@@ -404,7 +414,7 @@ public:
         sizePolicy5.setHeightForWidth(label_11->sizePolicy().hasHeightForWidth());
         label_11->setSizePolicy(sizePolicy5);
         label_11->setMaximumSize(QSize(16777215, 25));
-        label_11->setFont(font);
+        label_11->setFont(font1);
         label_11->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         gridLayout->addWidget(label_11, 0, 1, 1, 1);
@@ -415,7 +425,7 @@ public:
         wheel2_label->setSizePolicy(sizePolicy6);
         wheel2_label->setMinimumSize(QSize(40, 0));
         wheel2_label->setMaximumSize(QSize(40, 50));
-        wheel2_label->setFont(font3);
+        wheel2_label->setFont(font);
         wheel2_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         wheel2_label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
@@ -480,7 +490,7 @@ public:
         verticalLayout_9->setObjectName(QStringLiteral("verticalLayout_9"));
         label_5 = new QLabel(angular_linear_speed_widget);
         label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setFont(font3);
+        label_5->setFont(font);
         label_5->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_5->setAlignment(Qt::AlignCenter);
         label_5->setWordWrap(true);
@@ -495,7 +505,7 @@ public:
 
         label_4 = new QLabel(angular_linear_speed_widget);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setFont(font3);
+        label_4->setFont(font);
         label_4->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_4->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -503,7 +513,7 @@ public:
 
         a_x = new QLabel(angular_linear_speed_widget);
         a_x->setObjectName(QStringLiteral("a_x"));
-        a_x->setFont(font3);
+        a_x->setFont(font);
         a_x->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_6->addWidget(a_x);
@@ -523,7 +533,7 @@ public:
 
         label_7 = new QLabel(angular_linear_speed_widget);
         label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setFont(font3);
+        label_7->setFont(font);
         label_7->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_7->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -531,7 +541,7 @@ public:
 
         a_y = new QLabel(angular_linear_speed_widget);
         a_y->setObjectName(QStringLiteral("a_y"));
-        a_y->setFont(font3);
+        a_y->setFont(font);
         a_y->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_7->addWidget(a_y);
@@ -551,7 +561,7 @@ public:
 
         label_8 = new QLabel(angular_linear_speed_widget);
         label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setFont(font3);
+        label_8->setFont(font);
         label_8->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_8->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -559,7 +569,7 @@ public:
 
         a_z = new QLabel(angular_linear_speed_widget);
         a_z->setObjectName(QStringLiteral("a_z"));
-        a_z->setFont(font3);
+        a_z->setFont(font);
         a_z->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_8->addWidget(a_z);
@@ -573,7 +583,7 @@ public:
 
         label_6 = new QLabel(angular_linear_speed_widget);
         label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setFont(font3);
+        label_6->setFont(font);
         label_6->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_6->setAlignment(Qt::AlignCenter);
         label_6->setWordWrap(true);
@@ -588,7 +598,7 @@ public:
 
         label_9 = new QLabel(angular_linear_speed_widget);
         label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setFont(font3);
+        label_9->setFont(font);
         label_9->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_9->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -596,7 +606,7 @@ public:
 
         l_x = new QLabel(angular_linear_speed_widget);
         l_x->setObjectName(QStringLiteral("l_x"));
-        l_x->setFont(font3);
+        l_x->setFont(font);
         l_x->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_9->addWidget(l_x);
@@ -616,7 +626,7 @@ public:
 
         label_10 = new QLabel(angular_linear_speed_widget);
         label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setFont(font3);
+        label_10->setFont(font);
         label_10->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_10->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -624,7 +634,7 @@ public:
 
         l_y = new QLabel(angular_linear_speed_widget);
         l_y->setObjectName(QStringLiteral("l_y"));
-        l_y->setFont(font3);
+        l_y->setFont(font);
         l_y->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_10->addWidget(l_y);
@@ -644,7 +654,7 @@ public:
 
         label_3 = new QLabel(angular_linear_speed_widget);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setFont(font3);
+        label_3->setFont(font);
         label_3->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         label_3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -652,7 +662,7 @@ public:
 
         l_z = new QLabel(angular_linear_speed_widget);
         l_z->setObjectName(QStringLiteral("l_z"));
-        l_z->setFont(font3);
+        l_z->setFont(font);
         l_z->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_11->addWidget(l_z);
@@ -960,9 +970,12 @@ public:
     void retranslateUi(QWidget *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Form", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("MainWindow", "PushButton", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "ROS Hostname or IP :", Q_NULLPTR));
+        hostname_txt->setPlaceholderText(QApplication::translate("MainWindow", "localhost", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MainWindow", "ROS Master URI :", Q_NULLPTR));
+        masteruri_txt->setPlaceholderText(QApplication::translate("MainWindow", "http://localhost:11311", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "Connect", Q_NULLPTR));
+        label_20->setText(QApplication::translate("MainWindow", "Connected to : ", Q_NULLPTR));
         label_15->setText(QApplication::translate("MainWindow", "IMU Temperature:", Q_NULLPTR));
         TemperatureLabel->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
         celsius->setText(QApplication::translate("MainWindow", "\302\260C", Q_NULLPTR));
@@ -993,9 +1006,9 @@ public:
         label_3->setText(QApplication::translate("MainWindow", "z : ", Q_NULLPTR));
         l_z->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
         checkBox->setText(QApplication::translate("MainWindow", "Manual controll", Q_NULLPTR));
-        verticalSliderUpBtn->setText(QApplication::translate("MainWindow", "^", Q_NULLPTR));
+        verticalSliderUpBtn->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
         verticalSliderZeroBtn->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
-        verticalSliderDownBtn->setText(QApplication::translate("MainWindow", "v", Q_NULLPTR));
+        verticalSliderDownBtn->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
         controll_speed->setText(QApplication::translate("MainWindow", "0 m/s", Q_NULLPTR));
         horizontalLslider->setText(QApplication::translate("MainWindow", "<", Q_NULLPTR));
         controll_steer->setText(QApplication::translate("MainWindow", "0 rad/s", Q_NULLPTR));

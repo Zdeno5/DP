@@ -13,6 +13,9 @@
 #include <rviz/display.h>
 #include <rviz/tool_manager.h>
 
+#include <rviz/interactive_object.h>
+#include <rviz/viewport_mouse_event.h>
+
 #include <std_msgs/String.h>
 #include <std_msgs/Float64.h>
 #include <std_msgs/Float32MultiArray.h>
@@ -65,6 +68,8 @@ private slots:
 
   void on_horizontalRslider_clicked();
 
+  void on_pushButton_clicked();
+
 private:
   Ui::MainWindow *ui;
 
@@ -84,12 +89,16 @@ private:
   ros::Subscriber plan_sub;
   ros::Subscriber map_sub;
 
+  //ros publishers
+  ros::Publisher controll_pub;
+
   //rviz
   rviz::VisualizationManager* rviz_manager;
   rviz::RenderPanel* rviz_render;
   rviz::VisualizationManager* camera_manager;
   rviz::RenderPanel* camera_render;
 
+  //rviz displays
   rviz::Display* scan_display;
   rviz::Display* local_costmap_display;
   rviz::Display* global_costmap_display;
