@@ -69,6 +69,17 @@ MainWindow::MainWindow(QWidget *parent) :
   rviz_manager = new rviz::VisualizationManager(rviz_render);
   rviz_render->initialize( rviz_manager->getSceneManager(), rviz_manager );
   rviz_manager ->initialize();
+
+  rviz_tool_manager = rviz_manager->getToolManager();
+  int goal_index = 0;
+  QStringList sl = rviz_tool_manager->getToolClasses();
+  for(int i=0 ; i < sl.length() ; i++){
+     std::cout << sl.at(i).toStdString() << std::endl;
+     if(sl.at(i) == "rviz/SetGoal")
+       goal_index = i;
+  }
+  rviz_tool_manager->setCurrentTool(rviz_tool_manager->getTool(goal_index));
+
   camera_render = new rviz::RenderPanel;
   camera_manager = new rviz::VisualizationManager(camera_render);
   camera_render->initialize( camera_manager->getSceneManager(), camera_manager );
@@ -81,8 +92,6 @@ MainWindow::MainWindow(QWidget *parent) :
   //clean the manager
   rviz_manager->removeAllDisplays();
   camera_manager->removeAllDisplays();
-  //rviz_manager->handleMouseEvent();
-  //rviz_manager->getSelectionManager();
 
   //add displays ////////////////////////////////////////////////////////////////////////
   map_display = rviz_manager->createDisplay( "rviz/Map", "adjustable map", true );

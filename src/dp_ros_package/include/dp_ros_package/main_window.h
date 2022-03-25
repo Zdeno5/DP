@@ -12,6 +12,7 @@
 #include <rviz/render_panel.h>
 #include <rviz/display.h>
 #include <rviz/tool_manager.h>
+#include <rviz/tool.h>
 
 #include <rviz/interactive_object.h>
 #include <rviz/viewport_mouse_event.h>
@@ -97,6 +98,7 @@ private:
   rviz::RenderPanel* rviz_render;
   rviz::VisualizationManager* camera_manager;
   rviz::RenderPanel* camera_render;
+  rviz::ToolManager* rviz_tool_manager;
 
   //rviz displays
   rviz::Display* scan_display;

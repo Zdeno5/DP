@@ -41,6 +41,8 @@ rviz/display.h
 -
 rviz/tool_manager.h
 -
+rviz/tool.h
+-
 rviz/interactive_object.h
 -
 rviz/viewport_mouse_event.h
