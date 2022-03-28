@@ -155,6 +155,7 @@ public:
     QWidget *rviz_widget;
     QVBoxLayout *verticalLayout_5;
     QVBoxLayout *rviz_layout;
+    QPushButton *setGoalButton;
     QSpacerItem *horizontalSpacer;
 
     void setupUi(QWidget *MainWindow)
@@ -943,8 +944,16 @@ public:
         verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
         verticalLayout_5->setContentsMargins(1, 1, 1, 1);
         rviz_layout = new QVBoxLayout();
-        rviz_layout->setSpacing(6);
+        rviz_layout->setSpacing(0);
         rviz_layout->setObjectName(QStringLiteral("rviz_layout"));
+        setGoalButton = new QPushButton(rviz_widget);
+        setGoalButton->setObjectName(QStringLiteral("setGoalButton"));
+        sizePolicy6.setHeightForWidth(setGoalButton->sizePolicy().hasHeightForWidth());
+        setGoalButton->setSizePolicy(sizePolicy6);
+        setGoalButton->setFlat(false);
+
+        rviz_layout->addWidget(setGoalButton);
+
         horizontalSpacer = new QSpacerItem(40, 1, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         rviz_layout->addItem(horizontalSpacer);
@@ -1014,6 +1023,7 @@ public:
         controll_steer->setText(QApplication::translate("MainWindow", "0 rad/s", Q_NULLPTR));
         horizontalZslider->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
         horizontalRslider->setText(QApplication::translate("MainWindow", ">", Q_NULLPTR));
+        setGoalButton->setText(QApplication::translate("MainWindow", "Set Goal", Q_NULLPTR));
     } // retranslateUi
 
 };

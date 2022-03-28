@@ -71,14 +71,6 @@ MainWindow::MainWindow(QWidget *parent) :
   rviz_manager ->initialize();
 
   rviz_tool_manager = rviz_manager->getToolManager();
-  int goal_index = 0;
-  QStringList sl = rviz_tool_manager->getToolClasses();
-  for(int i=0 ; i < sl.length() ; i++){
-     std::cout << sl.at(i).toStdString() << std::endl;
-     if(sl.at(i) == "rviz/SetGoal")
-       goal_index = i;
-  }
-  rviz_tool_manager->setCurrentTool(rviz_tool_manager->getTool(goal_index));
 
   camera_render = new rviz::RenderPanel;
   camera_manager = new rviz::VisualizationManager(camera_render);
@@ -326,4 +318,16 @@ void MainWindow::on_pushButton_clicked()
   remappings["__master"] = master_uri.toStdString();
   remappings["__hostname"] = host.toStdString();
   ros::init(remappings,"ros_node",ros::init_options::AnonymousName);
+}
+
+void MainWindow::on_setGoalButton_clicked()
+{
+  int goal_index = 0;
+  QStringList sl = rviz_tool_manager->getToolClasses();
+  for(int i=0 ; i < sl.length() ; i++){
+     //std::cout << sl.at(i).toStdString() << std::endl;
+     if(sl.at(i) == "rviz/SetGoal")
+       goal_index = i;
+  }
+  rviz_tool_manager->setCurrentTool(rviz_tool_manager->getTool(goal_index));
 }

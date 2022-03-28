@@ -71,6 +71,8 @@ private slots:
 
   void on_pushButton_clicked();
 
+  void on_setGoalButton_clicked();
+
 private:
   Ui::MainWindow *ui;
 
