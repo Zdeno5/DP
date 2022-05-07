@@ -4,7 +4,7 @@ get_filename_component(PACKAGE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 message("Creating Package: ${PACKAGE_NAME}")
 
 project(${PACKAGE_NAME})  ## this package name is the name of the directory this cmake file is in
-
+find_package(OpenCV 3.2 REQUIRED)
 
 ################################
 ##  CONFIGURE THIS FILE HERE  ##
@@ -14,23 +14,24 @@ set(ROS_DEPENDS
   roscpp
   std_msgs
   rviz
+  cv_bridge
   )
 
 set(EXTERNAL_DEPENDS
   Qt5Widgets
   Qt5PrintSupport
-  #OpenCV
+  OpenCV
   )
 
 set(EXTERNAL_DEPENDS_LIB
   Qt5::Widgets
   Qt5::PrintSupport
   Qt5::Core
-  #${OpenCV_LIBS}
+  ${OpenCV_LIBS}
   )
 
 set(INCLUDE_DIRECTORIES
-  #${OpenCV_LIBS}
+  ${OpenCV_INCLUDE_DIRS}
   )
 
 

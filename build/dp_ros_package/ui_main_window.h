@@ -41,7 +41,6 @@ public:
     QLabel *label_2;
     QLineEdit *masteruri_txt;
     QPushButton *pushButton;
-    QLabel *label_20;
     QWidget *temperatureWidget;
     QVBoxLayout *verticalLayout_8;
     QSpacerItem *verticalSpacer_2;
@@ -70,43 +69,6 @@ public:
     QLabel *label_17;
     QLabel *label_18;
     QLabel *label_19;
-    QWidget *middlewidget;
-    QVBoxLayout *verticalLayout_6;
-    QWidget *angular_linear_speed_widget;
-    QVBoxLayout *verticalLayout_9;
-    QLabel *label_5;
-    QHBoxLayout *horizontalLayout_6;
-    QSpacerItem *horizontalSpacer_5;
-    QLabel *label_4;
-    QLabel *a_x;
-    QSpacerItem *horizontalSpacer_6;
-    QHBoxLayout *horizontalLayout_7;
-    QSpacerItem *horizontalSpacer_7;
-    QLabel *label_7;
-    QLabel *a_y;
-    QSpacerItem *horizontalSpacer_8;
-    QHBoxLayout *horizontalLayout_8;
-    QSpacerItem *horizontalSpacer_9;
-    QLabel *label_8;
-    QLabel *a_z;
-    QSpacerItem *horizontalSpacer_10;
-    QLabel *label_6;
-    QHBoxLayout *horizontalLayout_9;
-    QSpacerItem *horizontalSpacer_11;
-    QLabel *label_9;
-    QLabel *l_x;
-    QSpacerItem *horizontalSpacer_14;
-    QHBoxLayout *horizontalLayout_10;
-    QSpacerItem *horizontalSpacer_12;
-    QLabel *label_10;
-    QLabel *l_y;
-    QSpacerItem *horizontalSpacer_15;
-    QHBoxLayout *horizontalLayout_11;
-    QSpacerItem *horizontalSpacer_13;
-    QLabel *label_3;
-    QLabel *l_z;
-    QSpacerItem *horizontalSpacer_16;
-    QSpacerItem *horizontalSpacer_2;
     QWidget *verticalWidget;
     QVBoxLayout *verticalLayout_10;
     QWidget *cameraWidget;
@@ -231,13 +193,6 @@ public:
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         verticalLayout_4->addWidget(pushButton);
-
-        label_20 = new QLabel(connectwidget);
-        label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setFont(font);
-        label_20->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        verticalLayout_4->addWidget(label_20);
 
 
         verticalLayout->addWidget(connectwidget);
@@ -478,212 +433,6 @@ public:
 
 
         horizontalLayout->addWidget(leftwidget);
-
-        middlewidget = new QWidget(MainWindow);
-        middlewidget->setObjectName(QStringLiteral("middlewidget"));
-        middlewidget->setStyleSheet(QStringLiteral(""));
-        verticalLayout_6 = new QVBoxLayout(middlewidget);
-        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
-        angular_linear_speed_widget = new QWidget(middlewidget);
-        angular_linear_speed_widget->setObjectName(QStringLiteral("angular_linear_speed_widget"));
-        angular_linear_speed_widget->setStyleSheet(QStringLiteral("#angular_linear_speed_widget{border: 1px solid white;}"));
-        verticalLayout_9 = new QVBoxLayout(angular_linear_speed_widget);
-        verticalLayout_9->setObjectName(QStringLiteral("verticalLayout_9"));
-        label_5 = new QLabel(angular_linear_speed_widget);
-        label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setFont(font);
-        label_5->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_5->setAlignment(Qt::AlignCenter);
-        label_5->setWordWrap(true);
-
-        verticalLayout_9->addWidget(label_5);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        horizontalSpacer_5 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_5);
-
-        label_4 = new QLabel(angular_linear_speed_widget);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setFont(font);
-        label_4->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_4->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_6->addWidget(label_4);
-
-        a_x = new QLabel(angular_linear_speed_widget);
-        a_x->setObjectName(QStringLiteral("a_x"));
-        a_x->setFont(font);
-        a_x->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        horizontalLayout_6->addWidget(a_x);
-
-        horizontalSpacer_6 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_6);
-
-
-        verticalLayout_9->addLayout(horizontalLayout_6);
-
-        horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
-        horizontalSpacer_7 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_7->addItem(horizontalSpacer_7);
-
-        label_7 = new QLabel(angular_linear_speed_widget);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setFont(font);
-        label_7->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_7->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_7->addWidget(label_7);
-
-        a_y = new QLabel(angular_linear_speed_widget);
-        a_y->setObjectName(QStringLiteral("a_y"));
-        a_y->setFont(font);
-        a_y->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        horizontalLayout_7->addWidget(a_y);
-
-        horizontalSpacer_8 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_7->addItem(horizontalSpacer_8);
-
-
-        verticalLayout_9->addLayout(horizontalLayout_7);
-
-        horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        horizontalSpacer_9 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_8->addItem(horizontalSpacer_9);
-
-        label_8 = new QLabel(angular_linear_speed_widget);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setFont(font);
-        label_8->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_8->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_8->addWidget(label_8);
-
-        a_z = new QLabel(angular_linear_speed_widget);
-        a_z->setObjectName(QStringLiteral("a_z"));
-        a_z->setFont(font);
-        a_z->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        horizontalLayout_8->addWidget(a_z);
-
-        horizontalSpacer_10 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_8->addItem(horizontalSpacer_10);
-
-
-        verticalLayout_9->addLayout(horizontalLayout_8);
-
-        label_6 = new QLabel(angular_linear_speed_widget);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setFont(font);
-        label_6->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_6->setAlignment(Qt::AlignCenter);
-        label_6->setWordWrap(true);
-
-        verticalLayout_9->addWidget(label_6);
-
-        horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
-        horizontalSpacer_11 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_9->addItem(horizontalSpacer_11);
-
-        label_9 = new QLabel(angular_linear_speed_widget);
-        label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setFont(font);
-        label_9->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_9->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_9->addWidget(label_9);
-
-        l_x = new QLabel(angular_linear_speed_widget);
-        l_x->setObjectName(QStringLiteral("l_x"));
-        l_x->setFont(font);
-        l_x->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        horizontalLayout_9->addWidget(l_x);
-
-        horizontalSpacer_14 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_9->addItem(horizontalSpacer_14);
-
-
-        verticalLayout_9->addLayout(horizontalLayout_9);
-
-        horizontalLayout_10 = new QHBoxLayout();
-        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
-        horizontalSpacer_12 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_10->addItem(horizontalSpacer_12);
-
-        label_10 = new QLabel(angular_linear_speed_widget);
-        label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setFont(font);
-        label_10->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_10->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_10->addWidget(label_10);
-
-        l_y = new QLabel(angular_linear_speed_widget);
-        l_y->setObjectName(QStringLiteral("l_y"));
-        l_y->setFont(font);
-        l_y->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        horizontalLayout_10->addWidget(l_y);
-
-        horizontalSpacer_15 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_10->addItem(horizontalSpacer_15);
-
-
-        verticalLayout_9->addLayout(horizontalLayout_10);
-
-        horizontalLayout_11 = new QHBoxLayout();
-        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
-        horizontalSpacer_13 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_11->addItem(horizontalSpacer_13);
-
-        label_3 = new QLabel(angular_linear_speed_widget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setFont(font);
-        label_3->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-        label_3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_11->addWidget(label_3);
-
-        l_z = new QLabel(angular_linear_speed_widget);
-        l_z->setObjectName(QStringLiteral("l_z"));
-        l_z->setFont(font);
-        l_z->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
-
-        horizontalLayout_11->addWidget(l_z);
-
-        horizontalSpacer_16 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        horizontalLayout_11->addItem(horizontalSpacer_16);
-
-
-        verticalLayout_9->addLayout(horizontalLayout_11);
-
-        horizontalSpacer_2 = new QSpacerItem(160, 1, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        verticalLayout_9->addItem(horizontalSpacer_2);
-
-
-        verticalLayout_6->addWidget(angular_linear_speed_widget);
-
-
-        horizontalLayout->addWidget(middlewidget);
 
         verticalWidget = new QWidget(MainWindow);
         verticalWidget->setObjectName(QStringLiteral("verticalWidget"));
@@ -984,36 +733,21 @@ public:
         label_2->setText(QApplication::translate("MainWindow", "ROS Master URI :", Q_NULLPTR));
         masteruri_txt->setPlaceholderText(QApplication::translate("MainWindow", "http://localhost:11311", Q_NULLPTR));
         pushButton->setText(QApplication::translate("MainWindow", "Connect", Q_NULLPTR));
-        label_20->setText(QApplication::translate("MainWindow", "Connected to : ", Q_NULLPTR));
         label_15->setText(QApplication::translate("MainWindow", "IMU Temperature:", Q_NULLPTR));
         TemperatureLabel->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
         celsius->setText(QApplication::translate("MainWindow", "\302\260C", Q_NULLPTR));
         label_13->setText(QString());
         label_14->setText(QString());
-        wheel1_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>1000</p></body></html>", Q_NULLPTR));
+        wheel1_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>0</p></body></html>", Q_NULLPTR));
         label_12->setText(QString());
-        wheel4_label->setText(QApplication::translate("MainWindow", "10", Q_NULLPTR));
-        wheel3_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>500</p></body></html>", Q_NULLPTR));
+        wheel4_label->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
+        wheel3_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>0</p></body></html>", Q_NULLPTR));
         label_11->setText(QApplication::translate("MainWindow", "Wheel Speeds", Q_NULLPTR));
-        wheel2_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>100</p></body></html>", Q_NULLPTR));
+        wheel2_label->setText(QApplication::translate("MainWindow", "<html><head/><body><p>0</p></body></html>", Q_NULLPTR));
         label_16->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
         label_17->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
         label_18->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
         label_19->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
-        label_5->setText(QApplication::translate("MainWindow", "Required angular speed", Q_NULLPTR));
-        label_4->setText(QApplication::translate("MainWindow", "x : ", Q_NULLPTR));
-        a_x->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
-        label_7->setText(QApplication::translate("MainWindow", "y : ", Q_NULLPTR));
-        a_y->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
-        label_8->setText(QApplication::translate("MainWindow", "z : ", Q_NULLPTR));
-        a_z->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
-        label_6->setText(QApplication::translate("MainWindow", "<html><head/><body><p>Required linear <br/>speed</p></body></html>", Q_NULLPTR));
-        label_9->setText(QApplication::translate("MainWindow", "x : ", Q_NULLPTR));
-        l_x->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
-        label_10->setText(QApplication::translate("MainWindow", "y : ", Q_NULLPTR));
-        l_y->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
-        label_3->setText(QApplication::translate("MainWindow", "z : ", Q_NULLPTR));
-        l_z->setText(QApplication::translate("MainWindow", "0.000", Q_NULLPTR));
         checkBox->setText(QApplication::translate("MainWindow", "Manual controll", Q_NULLPTR));
         verticalSliderUpBtn->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
         verticalSliderZeroBtn->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));

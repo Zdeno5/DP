@@ -33,6 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/include/OGRE/Overlay"
   "/usr/include/OGRE"
+  "/usr/include/opencv"
   "/home/dp/DP_ws/src/dp_ros_package/include/dp_ros_package"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"

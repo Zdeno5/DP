@@ -1,4 +1,6 @@
 # Hashes of file build rules.
 e12aa66f173722a4900d982b873e957c CMakeFiles/clean_test_results
 8f7fd099c7eef65d589bc91af7bcda92 dp_ros_package/CMakeFiles/ros_node_autogen
+da64beb618fda78892fc9a4d5a808d8c dp_ros_package/CMakeFiles/simulator_node_autogen
+a00b8778e451a5e214bb066a2756928b dp_ros_package/CMakeFiles/video_autogen
 e77851f968578888546b8386ca8a845f dp_ros_package/ui_main_window.h

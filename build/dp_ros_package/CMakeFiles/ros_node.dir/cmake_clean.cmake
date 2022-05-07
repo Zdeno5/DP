@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "simulator_node_autogen"
+  "CMakeFiles/simulator_node_autogen.dir/AutogenOldSettings.cmake"
   "ros_node_autogen"
   "CMakeFiles/ros_node_autogen.dir/AutogenOldSettings.cmake"
+  "video_autogen"
+  "CMakeFiles/video_autogen.dir/AutogenOldSettings.cmake"
   "ui_main_window.h"
   "CMakeFiles/ros_node.dir/nodes/ros_node.cpp.o"
   "CMakeFiles/ros_node.dir/src/main_window.cpp.o"
