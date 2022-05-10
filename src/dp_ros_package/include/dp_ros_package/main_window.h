@@ -19,6 +19,11 @@
 #include <std_msgs/Float32MultiArray.h>
 #include <geometry_msgs/Twist.h>
 
+#include <image_transport/image_transport.h>
+#include <opencv2/highgui/highgui.hpp>
+#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/Image.h>
+
 namespace Ui {
 class MainWindow;
 }
@@ -34,6 +39,7 @@ public:
   //Callback functions
   void tempCallback(const std_msgs::Float64 msg);
   void wheel_speedCallback(const std_msgs::Float32MultiArray msg);
+  void imageCallback(const sensor_msgs::ImageConstPtr& img);
 
 public slots:
   void spinOnce();
@@ -73,6 +79,7 @@ private:
   //ros subscribers
   ros::Subscriber temp_sub;
   ros::Subscriber wheel_speed_sub;
+  ros::Subscriber image_sub;
 
   //ros publishers
   ros::Publisher controll_pub;
@@ -81,8 +88,6 @@ private:
   //rviz
   rviz::VisualizationManager* rviz_manager;
   rviz::RenderPanel* rviz_render;
-  rviz::VisualizationManager* camera_manager;
-  rviz::RenderPanel* camera_render;
   rviz::ToolManager* rviz_tool_manager;
 
   //rviz displays
@@ -93,7 +98,6 @@ private:
   rviz::Display* map_display;
   rviz::Display* pose_display;
   rviz::Display* goal_display;
-  rviz::Display* camera_display;
 };
 
 #endif // MAIN_WINDOW_H

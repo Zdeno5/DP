@@ -26,6 +26,11 @@ MainWindow::MainWindow(QWidget *parent) :
   NodeHadler->param<std::string>("wheel_speed_listen",wheel_speed_listen,"/simulator/wheel_speeds");
   wheel_speed_sub = NodeHadler->subscribe<std_msgs::Float32MultiArray>(wheel_speed_listen ,1 ,&MainWindow::wheel_speedCallback ,this );
 
+  //image subsrciber
+  std::string img_listen;
+  NodeHadler->param<std::string>("img_listen",img_listen,"/camera/image");
+  image_sub = NodeHadler->subscribe<sensor_msgs::Image>(img_listen ,1 ,&MainWindow::imageCallback ,this );
+
   //---------------------------------------Publishers--------------------------------------------------------//
   std::string controll_publish;
   NodeHadler->param<std::string>("controll_publish",controll_publish,"/controll");
@@ -44,18 +49,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
   rviz_tool_manager = rviz_manager->getToolManager();
 
-  camera_render = new rviz::RenderPanel;
-  camera_manager = new rviz::VisualizationManager(camera_render);
-  camera_render->initialize( camera_manager->getSceneManager(), camera_manager );
-  camera_manager ->initialize();
-
   //add rviz to ui
   ui->rviz_layout->addWidget(rviz_render);
-  ui->camera_layout->addWidget(camera_render);
 
   //clean the manager
   rviz_manager->removeAllDisplays();
-  camera_manager->removeAllDisplays();
 
   //add displays ////////////////////////////////////////////////////////////////////////
   map_display = rviz_manager->createDisplay( "rviz/Map", "adjustable map", true );
@@ -81,14 +79,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
   goal_display = rviz_manager->createDisplay( "rviz/Pose", "adjustable goal", true );
   goal_display->subProp( "Topic" )->setValue( "/move_base/current_goal" );
-
-  //camera_display = camera_manager->createDisplay( "rviz/Image", "stream image", true );
-  //camera_display->subProp( "Image Topic" )->setValue( "/camera/image" );
-  //camera_display->subProp( "Transport Hint" )->setValue( "compressed" );
-  //camera_display->subProp( "Queue Size" )->setValue( "2" );
-  //camera_display->subProp( "Unreliable" )->setValue( "false" );
-
-  //todo kiprobalni opencvvel rviz helyett
 
   //start rviz
   rviz_manager->startUpdate();
@@ -174,6 +164,21 @@ void MainWindow::wheel_speedCallback(const std_msgs::Float32MultiArray msg){
   ui->wheel2_label->setText(QString::number(wheel_msg.at(1),'f',2));
   ui->wheel3_label->setText(QString::number(wheel_msg.at(2),'f',2));
   ui->wheel4_label->setText(QString::number(wheel_msg.at(3),'f',2));
+}
+
+void MainWindow::imageCallback(const sensor_msgs::ImageConstPtr& img){
+  cv::Mat frame = cv_bridge::toCvShare(img, "bgr8")->image;
+  if (!frame.empty()){
+    cv::cvtColor(frame, frame, cv::COLOR_BGR2RGB);
+    QImage image;
+    QPixmap pixel;
+    image = QImage((uchar*) frame.data, frame.cols, frame.rows, frame.step, QImage::Format_RGB888);
+    pixel = QPixmap::fromImage(image);
+    int w = ui->stream_label->width();
+    int h = ui->stream_label->height();
+    ui->stream_label->setAlignment(Qt::AlignCenter);
+    ui->stream_label->setPixmap(pixel.scaled(w,h,Qt::KeepAspectRatio));
+  }
 }
 
 void MainWindow::on_checkBox_stateChanged(int state)

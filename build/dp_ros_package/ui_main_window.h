@@ -74,6 +74,7 @@ public:
     QWidget *cameraWidget;
     QVBoxLayout *verticalLayout_11;
     QVBoxLayout *camera_layout;
+    QLabel *stream_label;
     QWidget *controllerWidget;
     QVBoxLayout *verticalLayout_12;
     QCheckBox *checkBox;
@@ -447,6 +448,12 @@ public:
         verticalLayout_11->setContentsMargins(1, 1, 1, 1);
         camera_layout = new QVBoxLayout();
         camera_layout->setObjectName(QStringLiteral("camera_layout"));
+        stream_label = new QLabel(cameraWidget);
+        stream_label->setObjectName(QStringLiteral("stream_label"));
+        stream_label->setStyleSheet(QStringLiteral("background-color: rgb(46, 52, 54);"));
+
+        camera_layout->addWidget(stream_label);
+
 
         verticalLayout_11->addLayout(camera_layout);
 
@@ -748,6 +755,7 @@ public:
         label_17->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
         label_18->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
         label_19->setText(QApplication::translate("MainWindow", "m/s", Q_NULLPTR));
+        stream_label->setText(QString());
         checkBox->setText(QApplication::translate("MainWindow", "Manual controll", Q_NULLPTR));
         verticalSliderUpBtn->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
         verticalSliderZeroBtn->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));

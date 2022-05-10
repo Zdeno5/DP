@@ -713,7 +713,18 @@
             <number>1</number>
            </property>
            <item>
-            <layout class="QVBoxLayout" name="camera_layout"/>
+            <layout class="QVBoxLayout" name="camera_layout">
+             <item>
+              <widget class="QLabel" name="stream_label">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(46, 52, 54);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
           </layout>
          </widget>
